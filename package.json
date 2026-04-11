@@ -4,6 +4,9 @@
   "description": "",
   "license": "ISC",
   "author": "Hernande Monteiro <monteiro1998@live.com>",
+  "scripts": {
+    "start": "tsx main.ts"
+  },
   "dependencies": {
     "tsx": "^4.21.0"
   }

@@ -1,37 +1,6 @@
-class Queue {
-  private items: any[] = [];
+import Queue from "./src/Queue";
 
-  isEmpty(): boolean {
-    return this.items.length === 0;
-  }
-
-  enqueue(item: any) {
-    this.items.push(item);
-  }
-
-  dequeue(): any {
-    if (this.isEmpty()) {
-      throw new Error("Queue is empty");
-    }
-    return this.items.shift();
-  }
-
-  peek(): any {
-    if (this.isEmpty()) {
-      throw new Error("Queue is empty");
-    }
-    return this.items[0];
-  }
-
-  size(): number {
-    return this.items.length;
-  }
-
-  show(): any[] {
-    return this.items;
-  }
-}
-
+console.log("Testing Queue implementation...\n");
 const queue1 = new Queue();
 queue1.enqueue(1);
 queue1.enqueue(2);
@@ -48,3 +17,5 @@ queue1.dequeue();
 queue1.dequeue();
 console.log("after dequeueing all elements!");
 console.log("queue1.isEmpty():", queue1.isEmpty()); // Output: true
+
+console.log("\nAll tests passed successfully in queue test!");
