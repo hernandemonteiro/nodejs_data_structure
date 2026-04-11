@@ -1,0 +1,10 @@
+{
+  "name": "nodejs_data_structure",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Hernande Monteiro <monteiro1998@live.com>",
+  "dependencies": {
+    "tsx": "^4.21.0"
+  }
+}
