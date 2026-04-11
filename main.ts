@@ -18,4 +18,26 @@ queue1.dequeue();
 console.log("after dequeueing all elements!");
 console.log("queue1.isEmpty():", queue1.isEmpty()); // Output: true
 
-console.log("\nAll tests passed successfully in queue test!");
+console.log("\nAll tests passed successfully in queue test!\n");
+
+console.log("Testing Stack implementation...\n");
+import Stack from "./src/Stack";
+
+const stack1 = new Stack();
+stack1.push(1);
+stack1.push(2);
+stack1.push(3);
+stack1.push(4);
+
+console.log("stack1.show():", stack1.show()); // Output: [1, 2, 3, 4]
+console.log("stack1.pop():", stack1.pop()); // Output: 4
+console.log("stack1.peek():", stack1.peek()); // Output: 3
+console.log("stack1.size():", stack1.size()); // Output: 3
+console.log("stack1.isEmpty():", stack1.isEmpty()); // Output: false
+stack1.pop();
+stack1.pop();
+stack1.pop();
+console.log("after popping all elements!");
+console.log("stack1.isEmpty():", stack1.isEmpty()); // Output: true
+
+console.log("\nAll tests passed successfully in stack test!\n");
