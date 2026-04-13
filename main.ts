@@ -41,3 +41,39 @@ console.log("after popping all elements!");
 console.log("stack1.isEmpty():", stack1.isEmpty()); // Output: true
 
 console.log("\nAll tests passed successfully in stack test!\n");
+
+console.log("Testing LinkedList implementation...\n");
+import LinkedList from "./src/LinkedList";
+
+const list1 = new LinkedList<number>();
+list1.append(1);
+list1.append(2);
+list1.append(3);
+list1.append(4);
+
+console.log("list1.size():", list1.size()); // Output: 4
+console.log("list1.getAt(0):", list1.getAt(0)); // Output: 1
+console.log("list1.getAt(2):", list1.getAt(2)); // Output: 3
+console.log("list1.isEmpty():", list1.isEmpty()); // Output: false
+list1.insertAt(2, 99);
+console.log("after inserting 99 at index 2!");
+console.log("list1.getAt(2):", list1.getAt(2)); // Output: 99
+console.log("list1.show():", list1.showVisual());
+list1.removeAt(2);
+console.log("after removing element at index 2!");
+console.log("list1.getAt(2):", list1.getAt(2)); // Output: 3
+console.log("list1.show():", list1.showVisual());
+list1.removeAt(0);
+console.log("after removing element at index 0!");
+console.log("list1.getAt(0):", list1.getAt(0)); // Output: 2
+list1.removeAt(list1.size() - 1);
+console.log("after removing last element!");
+console.log("list1.size():", list1.size()); // Output: 2
+console.log("list1.isEmpty():", list1.isEmpty()); // Output: false
+list1.removeAt(0);
+list1.removeAt(0);
+console.log("after removing all elements!");
+console.log("list1.isEmpty():", list1.isEmpty()); // Output: true
+console.log("list1.show():", list1.showVisual()); // Output: empty
+
+console.log("\nAll tests passed successfully in linked list test!\n");
